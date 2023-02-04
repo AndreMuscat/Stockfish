@@ -34,7 +34,11 @@ pipeline {
 		}
     stage('Checkout') {
 		steps {
-		git checkout "$STRING-PARAMETER"
+         	sh '''
+            	#!/bin/sh
+			git checkout "$STRING-PARAMETER"
+    		echo "$PARAMETER_01"
+         	'''
 		}
 	}		
     stage('Compile code') {
