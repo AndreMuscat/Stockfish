@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    stages {
         stage('Setup parameters') {
             steps {
                 script { 
@@ -31,7 +32,6 @@ pipeline {
                 }
             }
 		}
-    stages {
         stage('Compile code') {
             steps {
          	sh '''
