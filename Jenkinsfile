@@ -47,7 +47,7 @@ pipeline {
 			steps {
          	sh '''
             	#!/bin/sh
-    		echo "test"
+    		echo "$PARAMETER_01"
          	'''
 		}
 	}
