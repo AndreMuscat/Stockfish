@@ -32,20 +32,12 @@ pipeline {
                 }
             }
 		}
-    stage('Checkout') {
-		steps {
-         	sh '''
-            	#!/bin/sh
-    		echo "$STRING-PARAMETER"
-			git checkout "$STRING-PARAMETER"
-    		echo "$STRING-PARAMETER"
-         	'''
-		}
-	}		
     stage('Compile code') {
             steps {
          	sh '''
     	    #!/bin/sh
+    		echo "$PARAMETER_01"
+    		echo "$STRING-PARAMETER"
 			cd src
     		make help
     		make net
