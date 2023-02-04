@@ -32,6 +32,9 @@ pipeline {
                 }
             }
 		}
+    stage('Checkout') {
+		git checkout "$PARAMETER_01"
+	}		
     stage('Compile code') {
             steps {
          	sh '''
