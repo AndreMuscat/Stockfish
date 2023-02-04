@@ -5,18 +5,21 @@ pipeline {
         stage('Compile code') {
             steps {
          	sh '''
-            	#!/bin/sh
-		cd src
+    	    #!/bin/sh
+			cd src
     		make help
     		make net
     		make build ARCH=x86-64-modern
          	'''
             }
         }
-	stage(‘Empty’) {
-	steps {
-	  echo ‘test’
-	}
+	stage('Empty') {
+			steps {
+         	sh '''
+            	#!/bin/sh
+    		echo "test"
+         	'''
+		}
 	}
 
     }
