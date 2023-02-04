@@ -23,8 +23,8 @@ pipeline {
                                  name: 'MULTI-LINE-STRING'
                             ),
                             string(
-                                defaultValue: 'scriptcrunch', 
-                                name: 'STRING-PARAMETER', 
+                                defaultValue: 'whatever', 
+                                name: 'TESTTHIS', 
                                 trim: true
                             )
                         ])
