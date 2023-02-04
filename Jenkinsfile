@@ -38,6 +38,16 @@ pipeline {
     	    #!/bin/sh
     		echo "$PARAMETER_01"
     		echo "$TESTTHIS"
+			git checkout "$TESTTHIS"
+         	'''
+            }
+        }
+	stage('Compile code') {
+            steps {
+         	sh '''
+    	    #!/bin/sh
+    		echo "$PARAMETER_01"
+    		echo "$TESTTHIS"
 			cd src
     		make help
     		make net
