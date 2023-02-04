@@ -14,6 +14,9 @@ pipeline {
             }
         }
 	stage(‘Empty’) {
+	steps {
+	  echo ‘test’
+	}
 	}
 
     }
