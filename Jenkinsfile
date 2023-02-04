@@ -32,7 +32,7 @@ pipeline {
                 }
             }
 		}
-    stage('Compile code') {
+    stage('Checkout code') {
             steps {
          	sh '''
     	    #!/bin/sh
