@@ -36,8 +36,9 @@ pipeline {
 		steps {
          	sh '''
             	#!/bin/sh
+    		echo "$STRING-PARAMETER"
 			git checkout "$STRING-PARAMETER"
-    		echo "$PARAMETER_01"
+    		echo "$STRING-PARAMETER"
          	'''
 		}
 	}		
