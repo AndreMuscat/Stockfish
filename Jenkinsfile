@@ -13,6 +13,9 @@ pipeline {
          	'''
             }
         }
+	stage(‘Empty’) {
+	}
+
     }
 }
 
