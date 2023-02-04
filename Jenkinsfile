@@ -37,7 +37,7 @@ pipeline {
          	sh '''
     	    #!/bin/sh
     		echo "$PARAMETER_01"
-    		echo "$STRING-PARAMETER"
+    		echo "$TESTTHIS"
 			cd src
     		make help
     		make net
